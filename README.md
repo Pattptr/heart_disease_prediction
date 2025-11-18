@@ -41,11 +41,43 @@ uv run python predict.py
 ```bash
 uv run jupyter notebook
 ```
+### Running the FastAPI Server
+To start the prediction API server:
+
+```bash
+uv run uvicorn src.predict:app --reload
+```
+
+The API will be available at http://localhost:8000. You can access the interactive API documentation at http://localhost:8000/docs.
+
+### Running with Docker
+
+If you prefer to use Docker:
+
+```bash
+docker build -t heart-disease-prediction .
+docker run -p 8888:8888 heart-disease-prediction
+```
 
 ## Project Structure
 
-
-
+```
+├── data/                      
+│   └── heart.csv              # Heart disease dataset
+├── model/                     
+│   └── model.bin              # Trained machine learning model
+├── src/                       
+│   ├── __init__.py            # Package initialization
+│   ├── predict.py             # FastAPI prediction endpoint
+│   └── train.py               # Model training script
+├── heart_disease_pred.ipynb   # Main prediction notebook
+├── Dockerfile                 # Docker configuration
+├── pyproject.toml             # Project dependencies (uv)
+├── uv.lock                    # Locked dependencies
+├── .python-version            # Python version specification
+├── .gitignore                 # Git ignore rules
+└── README.md                  # This file
+```
 
 ## Dataset
 
@@ -67,4 +99,3 @@ This project used [Heart Failure Prediction Dataset](https://www.kaggle.com/data
 | ST_Slope | Slope of the peak exercise ST segment | Up: upsloping, Flat: flat, Down: downsloping |
 | HeartDisease | Output class (target variable) | 1: heart disease, 0: Normal |
 
------
