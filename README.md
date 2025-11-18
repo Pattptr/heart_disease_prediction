@@ -16,7 +16,13 @@ Heart disease remains one of the leading causes of death worldwide. Early detect
 git clone https://github.com/Pattptr/heart_disease_prediction.git
 cd heart_disease_prediction
 ```
-2. Install dependencies using uv:
+2. (macOS users only) Install OpenMP for XGBoost:
+
+```bash
+brew install libomp
+```
+
+3. Install dependencies using uv:
    
 ```bash
 uv sync
