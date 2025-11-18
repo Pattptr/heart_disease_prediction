@@ -36,11 +36,6 @@ uv sync
 uv run python train.py
 ```
 
-### Making Predictions
-
-```bash
-uv run python predict.py
-```
 
 ### Running Jupyter Notebooks
 
