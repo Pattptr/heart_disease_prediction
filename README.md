@@ -57,7 +57,7 @@ If you prefer to use Docker:
 
 ```bash
 docker build -t heart-disease-prediction .
-docker run -p 8888:8888 heart-disease-prediction
+docker run -p 8000:8000 heart-disease-prediction
 ```
 
 ## Project Structure
