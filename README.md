@@ -3,8 +3,7 @@
 
 ## Dataset
 
-This project used [Heart Failure Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction) from Kaggle
-
+This project used [Heart Failure Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction) from Kaggle, which can be found in the data folder in this repository, or  downloaded it directly from Kaggle.
 ### Feature Descriptions
 
 | Feature | Description | Values/Range |
