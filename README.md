@@ -13,7 +13,7 @@ Heart disease remains one of the leading causes of death worldwide. Early detect
 1. Clone the repository:
    
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Pattptr/heart_disease_prediction.git
 cd heart-disease-prediction
 ```
 2. Install dependencies using uv:
