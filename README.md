@@ -1,5 +1,51 @@
 # Heart disease prediction
 
+## Problem Description
+Heart disease remains one of the leading causes of death worldwide. Early detection and risk assessment are crucial for effective prevention and treatment. This project develops a machine learning model to predict the likelihood of heart disease based on clinical data. To help identify high-risk individuals who may benefit from early medical intervention.
+
+## Prerequisites
+
+- Python 3.8 or higher
+- uv package manager
+
+## Installation
+
+1. Clone the repository:
+   
+```bash
+git clone <your-repository-url>
+cd heart-disease-prediction
+```
+2. Install dependencies using uv:
+   
+```bash
+uv sync
+```
+
+## Running the Project
+
+### Training the Model
+
+```bash
+uv run python train.py
+```
+
+### Making Predictions
+
+```bash
+uv run python predict.py
+```
+
+### Running Jupyter Notebooks
+
+```bash
+uv run jupyter notebook
+```
+
+## Project Structure
+
+
+
 
 ## Dataset
 
